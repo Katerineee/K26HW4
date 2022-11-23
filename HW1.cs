@@ -1,4 +1,3 @@
-
 interface IGeoObj
 {
     string GetInfo();
@@ -25,7 +24,7 @@ class River : IGeoObj
 
     public string GetInfo(int x, int y, string name, string description, int speed, int length)
     {
-        return "Координати X: " + x + "\n" + "Координати Y: " + y + "\n" + "Назва: " + name + "\n" + "Опис: " + description + "\n" + "Швидкiсть течiй: " + speed + " км/ч" + "\nДовжина: " + length;
+        return "Координати X: " + x + "\n" + "Координати Y: " + y + "\n" + "Назва: " + name + "\n" + "Опис: " + description + "\n" + "Швидкiсть течi: " + speed + " км/ч" + "\nДовжина: " + length;
     }
 
     public string GetInfo()
@@ -84,7 +83,7 @@ class Program
                 }
                 if (value < 1)
                 {
-                    Console.WriteLine("Число повинно бути додатне");
+                    Console.WriteLine("Число повинно бути додатне!");
                     continue;
                 }
                 return value;
@@ -135,7 +134,7 @@ class Program
         }
         if (obj == 1)
         {
-            Console.WriteLine("Введiть швидкiсть течiй");
+            Console.WriteLine("Введiть швидкiсть течi");
             speed = checkNum();
             Console.WriteLine("Введiть довжину рiчки");
             length = checkNum();
